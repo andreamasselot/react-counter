@@ -1,38 +1,74 @@
-.App {
+#root {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid #dddddd;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header i {
+  color: #5c47d3;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+
+}
+
+footer a,
+span {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 80vh;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.numbers {
+  background-color: #5c47d3;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  font-size: 40px;
+  width: 85px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.count {
+  border: none;
+  background-color: white;
+  font-size: 60px;
+  width: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.reset-button {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #5c47d3;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
